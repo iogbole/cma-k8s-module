@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: test
+    - name: test manifests folder
       uses: instrumenta/kubeval-action@master
+      with: 
+       files: ./manifests
